@@ -1,2 +1,2 @@
 # copowerDev
-Repositorio de archivos generales de desarrollo de software
+Control de versiones para el desarrollo y migracion del programa en CODESYS.
