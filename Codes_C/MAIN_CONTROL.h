@@ -62,7 +62,11 @@
 
 #ifndef MAIN_CONTROL_H_
 #define MAIN_CONTROL_H_
-// lo
+
+//logica
+
+#endif /*MAIN_CONTROL_H_*/
+
 #include "deif_types.h"
 #include "appl_types.h"
 #include "applrev.h"
