@@ -6246,7 +6246,8 @@ DS32 MAIN_actual_realpower_setpoint(void)
     
 	return( Power );
 }
-	
+
+//CONTINUE ACA ***************************************
 static void GridParallelOperationLimitedLoad(const DU8 sig)
 {
 	DBOOL Down;
@@ -6735,7 +6736,8 @@ static void GridParallelOperationFullLoad(const DU8 sig)
             if (!GAS.GasTypeBActive) // gas type A
             	COM.mode  = COM_DEMANDED;        // compressor demanded
             else // gas type B
-            	COM.mode  = COM_STOP;            // compressor off
+            	COM.mode  = COM_STOP;  
+				          // compressor off
 			IGN.mode      = IGN_MODE_ON;         // ignition on
          	ZS3.OperatingStartRequested = TRUE;
 			ISL.mode      = ISL_MODE_PARALLEL;   // parallel operation (all stages on), rmiISL
