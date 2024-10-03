@@ -569,7 +569,6 @@ void MAIN_control_20ms(void)
     else // fast stop is neither set via digital input nor via modbus -> can be acknowledged
         STOP_Tripped[STOPCONDITION_20001] = FALSE;
     
-    
     // automatic operation is set via modbus
     if (MBA.WriteConfigurationDigital & MBA_CONFIG_AUTOMATIC_OPERATION)
     {
@@ -622,7 +621,7 @@ void MAIN_control_20ms(void)
              }
        }
     }
-     
+
     // take care of acknowledge now in 100ms-Task (clear SC-Loop), rmiSPT
 
     if (PMS.EngineIDConfigured[ARC.nEngineId - 1])
@@ -698,12 +697,12 @@ void MAIN_control_20ms(void)
 			}
 		}
       }
-
       // set/reset local start demand if AUTO
       if (!STOP_is_Set(STOPCONDITION_30001))
       	MAIN.StartdemandLocal = MAIN.StartdemandRemote;
 
     }
+	
     else if (ELM.MainsFailure)
     {
       MAIN.StartdemandRemote = TRUE;
@@ -743,6 +742,7 @@ void MAIN_control_20ms(void)
       if (!STOP_is_Set(STOPCONDITION_30001))
       	MAIN.StartdemandLocal = MAIN.StartdemandRemote;
     }
+
     // check if digital input startdemand remote is set
     else if (DI_FUNCT[START_ENGINE].Assigned == ASSIGNED)
     {
@@ -782,11 +782,13 @@ void MAIN_control_20ms(void)
     else
         // startdemand remote is not assigned
         MAIN.StartdemandRemote = FALSE;
-    
+
+		
+   fffffffffffffgfdgsdddddddddsdgfdgffff QUEDE ACA sadsssssssssssdfgggggggggggggggggggggg
     // reset start demand from soft button
     if ( (STOP.actualLevel < 3) || !(STOP.actualBitMask & 0x0001) )
     	MAIN.StartdemandLocal = FALSE;
-    
+
     // StartdemandRemoteAndAuto = startdemand is set and we are in AUTO mode    
     MAIN.StartdemandRemoteAndAuto = ( MAIN.StartdemandRemote && !STOP_is_Set(STOPCONDITION_30001) );
     
@@ -3439,7 +3441,6 @@ static void Acceleration(const DU8 sig)
 		break; // end of regular block SIG_DO
 	}
 }
-
 
 
 
