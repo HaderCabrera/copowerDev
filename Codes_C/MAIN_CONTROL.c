@@ -784,7 +784,6 @@ void MAIN_control_20ms(void)
         MAIN.StartdemandRemote = FALSE;
 
 		
-   fffffffffffffgfdgsdddddddddsdgfdgffff QUEDE ACA sadsssssssssssdfgggggggggggggggggggggg
     // reset start demand from soft button
     if ( (STOP.actualLevel < 3) || !(STOP.actualBitMask & 0x0001) )
     	MAIN.StartdemandLocal = FALSE;
