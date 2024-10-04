@@ -11,9 +11,15 @@ Descargar cambio a de la nube (Si se sube un cambio a la nube, deberia hacer un 
 ```
 git pull
 ```
+
 Subir cambios
 ```
 git add .
 git commit -am "Comentario de lo que se hizo en la actualizacion para llevar un trazado de lo que esta haciendo y poder devovlernos a alguna version o funcionalidad que necesitemos"
 git push origin main
+```
+
+Cambiar un solo archivo
+```
+git aad nombre del archivo que quiere subir
 ```
