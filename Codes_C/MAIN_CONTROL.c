@@ -2183,7 +2183,7 @@ static void SystemReadyForStart(const DU8 sig)
 			//RSP.mode      = RSP_ENABLE;            // Refilling off
 			SAF.mode      = SAF_GUARD;             // ready for TRIP and protection
 			SCR.mode	  = SCR_BLOCK;
-			//STH.mode      = STH_ELECTRIC_DEMANDED; // heating of poil electrically
+//STH.mode      = STH_ELECTRIC_DEMANDED; // heatin|g of poil electrically
 			THR.mode	  = THR_HEAT_UP;			// thermoreactor heating enabled
 			TLB.mode      = TLB_OPEN;            // open turbo bypass
 			TUR.mode      = TUR_SHUTDOWN;          // governor stopped

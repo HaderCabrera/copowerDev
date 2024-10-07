@@ -1192,7 +1192,7 @@ static void MIX_SystemOff(const DU8 sig, DU8 mixer)
 			  break;
 			}
 			
-			if (MIX.mode[mixer] == MIX_MOVE_LEAN)
+		if (MIX.mode[mixer] == MIX_MOVE_LEAN)
 			{
 			  // State change if MAIN_CONTROL has changed mode
 			  Transit(MIX_SearchLimitLean, mixer);
@@ -5197,7 +5197,7 @@ void MIX_init(void)
 	// Initialization of the MIX struct
 	MIX_Set_AnalogOutZero();
 
-	//(PAR.init happens before MIX_init, so MIX_init can refer to parameters)
+	//(PAR.init happens before MIX_init, so MIX_init can refer to parameters)7
 	MIX.MixerFullRange_In = (DS32)PARA[ParRefInd[MIX_MAX_NUMBER_OF_STEPS__PARREFIND]].Value;
 	MIX.MixerFullRange_Out = MIX.MixerFullRange_In;
 
